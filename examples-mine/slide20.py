@@ -25,7 +25,7 @@ def byte_col(obj):
 def byte_sent(line):
     for each in line:
         yield int(each) if each != '-' else 0
-
+# Generated via generator
 log_file_names = Path(path).rglob(filepat)
 log_file_handle = generator_file_opener(log_file_names)
 log_lines = gen_lines(log_file_handle)
